@@ -1,0 +1,25 @@
+import pandas as pd
+
+def analyze_csv(csv_file):
+    # CSV file ko read karna
+    data = pd.read_csv(csv_file)
+    
+    # Descriptive statistics calculate karna
+    mean = data.mean()
+    median = data.median()
+    std_dev = data.std()
+    
+    # Output
+    print("Descriptive Statistics:")
+    print("Mean:")
+    print(mean)
+    print("\nMedian:")
+    print(median)
+    print("\nStandard Deviation:")
+    print(std_dev)
+
+# CSV file ka path
+csv_file_path = "path/to/your/file.csv"
+
+# CSV file ko analyze karna
+analyze_csv(csv_file_path)
